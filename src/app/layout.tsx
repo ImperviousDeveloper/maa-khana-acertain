@@ -20,6 +20,7 @@ const geist = Geist({
 import { Header } from "~/components/layout/Header";
 import { Footer } from "~/components/layout/Footer";
 import { Toaster } from "~/components/ui/sonner";
+import { Suspense } from "react";
 
 export default function RootLayout({
   children,
@@ -29,12 +30,14 @@ export default function RootLayout({
       <body className="min-h-screen bg-background font-sans antialiased">
         <SessionProvider>
           <TRPCReactProvider>
-            <Header />
-            <main className="min-h-screen pt-24 pb-12">
-              {children}
-            </main>
-            <Footer />
-            <Toaster />
+            <Suspense fallback={<div>Loading...</div>}>
+              <Header />
+              <main className="min-h-screen pt-24 pb-12">
+                {children}
+              </main>
+              <Footer />
+              <Toaster />
+            </Suspense>
           </TRPCReactProvider>
         </SessionProvider>
       </body>
