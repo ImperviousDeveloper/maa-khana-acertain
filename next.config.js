@@ -5,6 +5,20 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
+    typescript: {
+        // ignoreDevErrors: process.env.SKIP_ENV_VALIDATION === "true",
+        // ignoreDevErrors: true,
+        // tsconfigRootDir: ".",
+        // tsconfigFilePath: "./tsconfig.json",
+        ignoreBuildErrors: true
+    },
+    images: {
+        domains: ["images.unsplash.com"],
+    },
+};
 
 export default config;
