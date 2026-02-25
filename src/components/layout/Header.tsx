@@ -10,6 +10,8 @@ import { cn } from "~/lib/utils";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { CartDrawer } from "~/components/cart/CartDrawer";
 import { HeaderSearch } from "./HeaderSearch";
+import Image from "next/image";
+import MaaKhanaLogo from "../logo/MaaKhanaLogo";
 
 const navItems = [
     { name: "Products", href: "/products" },
@@ -27,7 +29,21 @@ export function Header() {
             <nav className="glass dark:glass-dark flex items-center justify-between w-full max-w-6xl px-6 py-3 rounded-2xl">
                 {/* Logo */}
                 <Link href="/" className="text-2xl font-bold tracking-tighter bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
+                    {/* <Link href="/" > */}
                     MAA KHANA
+                    {/* <div className="relative w-24 h-24"> */}
+                    <div>
+                        {/* <MaaKhanaLogo width={220} /> */}
+                    </div>
+                    {/* <div className="relative w-24 h-24">
+                        <Image
+                            src="/logo-1.png"
+                            alt="Maa Khana"
+                            width={220}
+                            height={110}
+                            className="object-contain"
+                        />
+                    </div> */}
                 </Link>
 
                 {/* Desktop Nav */}

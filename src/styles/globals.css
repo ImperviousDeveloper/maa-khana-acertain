@@ -125,6 +125,17 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+
+  /* --logo-primary: #3b82f6;
+  --logo-secondary: #22c55e;
+  --logo-accent: #facc15;
+  --logo-text: #1e293b; */
+
+  --logo-primary: #3b82f6;
+  --logo-secondary: #22c55e;
+  --logo-accent: #facc15;
+  --logo-text: #0f172a;
 }
 
 .dark {
@@ -159,6 +170,19 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+
+  /* --logo-primary: #60a5fa;
+  --logo-secondary: #4ade80;
+  --logo-accent: #fde047;
+  --logo-text: #ffffff; */
+
+
+
+  --logo-primary: #60a5fa;
+  --logo-secondary: #4ade80;
+  --logo-accent: #fde047;
+  --logo-text: #ffffff;
 }
 
 @layer base {
@@ -204,4 +228,47 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/*======================
+    404 page
+=======================*/
+
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  /* font-family: "Arvo", serif; */
+  text-align: center;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(./anime.gif);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.contentBox {
+  margin-top: -50px;
 }

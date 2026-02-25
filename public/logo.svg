@@ -1,0 +1,44 @@
+<svg width="520" height="140" viewBox="0 0 520 140" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <style>
+    .primary { fill: var(--logo-primary, #2f9cf4); }
+    .secondary { fill: var(--logo-secondary, #22c55e); }
+    .accent { fill: var(--logo-accent, #facc15); }
+    .text { fill: var(--logo-text, currentColor); font-family: 'Poppins', Arial, sans-serif; }
+  </style>
+
+  <!-- Circular nature icon -->
+  <g transform="translate(10,10)">
+    <circle cx="60" cy="60" r="55" class="secondary" opacity="0.12"/>
+    
+    <!-- Sun -->
+    <circle cx="75" cy="40" r="10" class="accent"/>
+    
+    <!-- Cloud -->
+    <g class="primary" opacity="0.9">
+      <circle cx="95" cy="45" r="8"/>
+      <circle cx="105" cy="48" r="7"/>
+      <circle cx="85" cy="48" r="7"/>
+      <rect x="85" y="48" width="25" height="8" rx="4"/>
+    </g>
+
+    <!-- Hills -->
+    <path d="M10 80 Q40 55 70 80 T120 80 V110 H10 Z" class="secondary"/>
+
+    <!-- Trees -->
+    <g class="secondary">
+      <circle cx="45" cy="70" r="8"/>
+      <rect x="43" y="70" width="4" height="12"/>
+      
+      <circle cx="90" cy="72" r="7"/>
+      <rect x="88" y="72" width="4" height="11"/>
+    </g>
+
+    <!-- Leaf curve -->
+    <path d="M5 95 Q60 130 120 95" stroke="currentColor" stroke-width="4" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Text -->
+  <text x="150" y="80" font-size="48" font-weight="600" class="text">
+    MaaKhana
+  </text>
+</svg>
